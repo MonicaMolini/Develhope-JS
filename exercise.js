@@ -4,8 +4,8 @@ function inner(){
 
 function printName(){
     let helloName = "Hello John";
-    return helloName
+    console.log(helloName);
 }
 
 
-console.log(inner());
+inner()
