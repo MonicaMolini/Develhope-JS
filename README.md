@@ -1,5 +1,8 @@
-# Object Copying - Exercise 1
+# Exercise Closures
 
-In this exercise we have created two objects: `person1` e `person2`. The object `person2` has been assigned to the object `person1`. You should modify the property `firstName` of the object `person2` in "Simon".
+Try to write your first `closure`. Write a function called `printName` and declare inside it a variable called `helloName`, the value of this variable will be: `"Hello John"`.
+Also declare a function named `inner` and return the `helloName` variable.
+The purpose is printing `"Hello John"` in the console.
 
-Write a comment explaining why, by modifying the object `person2`, also the object `person1` would be modified.
+Tips:
+- You can learn more about this topic checking the following article: https://www.freecodecamp.org/news/closures-in-javascript/
