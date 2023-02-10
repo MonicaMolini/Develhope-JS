@@ -1,5 +1,5 @@
 function adultFilter(persons) {
-  let adult =  persons.filter(persons => persons.age > 18);
+  let adult =  persons.filter(persons => persons.age >= 18);
   return adult
 }
 
