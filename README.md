@@ -1,3 +1,3 @@
-# Develhope-JS
+# Exercise 57
 
-Javascript Advanced Concepts
+Create a function called `sortPeopleByAge` that returns the people in ascending order by age.
