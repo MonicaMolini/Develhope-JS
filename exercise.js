@@ -1,10 +1,10 @@
-function inner(){    
+function printName(){   
+ let helloName = "Hello John";
+   function inner(){    
+    console.log(helloName);;
+    }
 
-function printName(){
-    let helloName = "Hello John";
-    console.log(helloName);    
-} 
-setTimeout(printName, 1000)
+    setTimeout(inner, 1000)
 }
 
-inner()
+printName()
