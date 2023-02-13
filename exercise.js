@@ -1,9 +1,10 @@
-function inner(){      
-     return printName()    
-    function printName(){
-    let helloName = "Hello John";
-    console.log(helloName);
+function printName(){   
+ let helloName = "Hello John";
+   function inner(){    
+    console.log(helloName);;
+    }
+
+   return inner()
 }
 
-
-inner()
+printName()
