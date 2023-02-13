@@ -1,9 +1,3 @@
-const order = {
-  customer:{
-    address:{}
-  }
-};
+const order = {};
 
-
-
-  console.log(order.customer.address.city?.());
+console.log(order.customer?.address?.city? '': 'City is required');
