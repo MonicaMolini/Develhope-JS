@@ -1,3 +1,3 @@
-# Develhope-JS
+# JSON methods - Exercise 1
 
-Javascript Advanced Concepts
+Convert the `developer` object into json.
