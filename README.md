@@ -1,3 +1,3 @@
-# Develhope-JS
+# Rest parameters and spread syntax
 
-Javascript Advanced Concepts
+Perform a code refactoring by using the Rest operator. The output of the console.log must not change.
