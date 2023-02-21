@@ -1,3 +1,3 @@
-# Develhope-JS
+# Destructuring assignment - 61
 
-Javascript Advanced Concepts
+Use the destructuring to assign the values just with one code line.
