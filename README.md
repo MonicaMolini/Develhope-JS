@@ -1,3 +1,3 @@
-# Develhope-JS
+# JSON methods
 
-Javascript Advanced Concepts
+In this exercise we need to filter the properties of the object person in order to convert just the id and age values into JSON.
