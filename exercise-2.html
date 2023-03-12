@@ -1,0 +1,32 @@
+<html>
+
+<body>
+  <div id="container" style="display: flex; align-items: center;"></div>
+</body>
+
+</html>
+
+<script>
+  // code here
+  let BASE_URL = "https://jsonplaceholder.typicode.com/todos/";
+
+  async function createData(id) {
+    let res = await fetch(BASE_URL + id);
+    let json = await res.json();
+
+    let title = document.createElement("h2");
+    title.innerHTML = json.title;
+
+    let checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.checked = json.completed;
+    checkbox.disabled = true;
+
+    let container = document.getElementById("container");
+    container.appendChild(title);
+    container.appendChild(checkbox);
+  }
+
+  window.addEventListener("DOMContentLoaded", createData(4))
+
+</script>
