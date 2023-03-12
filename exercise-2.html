@@ -1,0 +1,32 @@
+<html>
+
+<body>
+  <div id="container" style="display: flex; align-items: center;"></div>
+</body>
+
+</html>
+
+<script>
+  // code here
+  let BASE_URL = "https://jsonplaceholder.typicode.com/todos/";
+
+  async function createData() {
+    let res = await fetch(BASE_URL);
+    let json = await res.json();
+    let titles = await json.map(element => element.title);    
+
+    let container = document.getElementById("container");
+    let ul = document.createElement("ul");  
+    container.appendChild(ul);    
+
+    for(i = 0; i <= titles.length - 1; i++){
+      let li = document.createElement('li');
+      li.innerHTML = titles[i];
+      ul.appendChild(li);
+    }       
+    
+  }
+
+  window.addEventListener("DOMContentLoaded", createData)
+
+</script>
