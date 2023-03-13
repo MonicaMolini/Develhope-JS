@@ -1,0 +1,68 @@
+<html>
+
+<body>
+  <div id="container">
+    <form>
+      <div>
+        <label>Title</label>
+        <input type="text" id="todo-title" />
+      </div>
+      <div>
+        <label>Completed</label>
+        <input type="checkbox" id="todo-completed" />
+      </div>
+
+      <button type="submit" id="submit-todo"></button>
+    </form>
+  </div>
+</body>
+
+</html>
+
+<script>
+  // code here
+  const BASE_URL = "https://jsonplaceholder.typicode.com/posts";
+
+  let input = document.getElementById("todo-title");
+  let checkcontrol = document.getElementById("todo-completed");
+
+
+  let button = document.getElementById("submit-todo");
+  const form = document.querySelector("form");
+  button.innerText = "Submit"
+  let newPost = {};
+
+  async function getPost(newPost = {}) {
+    const res = fetch(BASE_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(newPost)
+    })
+  }
+
+  form.addEventListener('submit', (submission) => {
+    submission.preventDefault()
+    newPost = {
+      title: document.getElementById('todo-title').value,
+      checkbox: document.getElementById('todo-completed').checked
+    }       
+    alert("send it!")   
+             
+    //questa parte è stata inserita per ulteriore esercizio
+
+    // 
+    // let response = document.createElement("h2")
+    // response.innerText = "Todo:"
+    // let title = document.createElement("p");
+    // let check = document.createElement("input")
+    // check.type= "checkbox"
+    // check.disabled = true;
+    // check.checked = newPost.checkbox
+    // title.innerHTML = newPost.title  
+    // div.append(response)    
+    // div.append(title)
+    // div.append(check)      
+  })
+
+
+</script>
